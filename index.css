@@ -1,0 +1,51 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+button{
+    display: block;
+    width: 200px;
+    border-radius: 5%;
+    margin: 10px auto;
+    line-height: 30px;
+    padding: 5px;
+    background-color: transparent;
+    border: 3px white double;
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+}
+
+section{
+    margin-left: 10vw;
+    font-size: 0;
+    width: 80vw;
+    min-height: 80vh;
+    border: 5px white double;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.color{
+    width: 20%;
+    height: 20vh;
+    margin-top: 2vh;
+    border: 5px rgb(241, 223, 223) solid;
+    border-radius: 10%;
+    cursor: pointer;
+}
