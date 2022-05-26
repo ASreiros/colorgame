@@ -3,19 +3,22 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: lightgreen;
+    position: relative;
 }
 
 h1{
     text-align: center;
     color: white;
+    margin: 0;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 button{
-    display: block;
+    display: inline-block;
     width: 200px;
     border-radius: 5%;
-    margin: 10px auto;
+    margin: 10px 0;
+    margin-left: calc(50% - 100px);
     line-height: 30px;
     padding: 5px;
     background-color: transparent;
@@ -26,26 +29,70 @@ button{
 
 }
 
+.soundcontrol{
+    display: inline-block;
+    width:300px;
+    margin-left: calc(25% - 100px - 150px);
+}
+
+.soundcontrol>input{
+    height: 20px;
+}
+
+.soundcontrol>label>img{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+    
+}
+
 section{
     margin-left: 10vw;
     font-size: 0;
     width: 80vw;
-    min-height: 80vh;
     border: 5px white double;
     border-radius: 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px 20px;
     
 }
 
 .color{
-    width: 20%;
+    width: 20vh;
     height: 20vh;
     margin-top: 2vh;
+    margin-left: calc((100% - 80vh - 40px)/8);
+    margin-right: calc((100% - 80vh - 40px)/8);
     border: 5px rgb(241, 223, 223) solid;
     border-radius: 10%;
     cursor: pointer;
+    transition: all .2s ease-in-out; 
+}
+
+.color:hover{
+    transform: scale(1.1); 
+    z-index: 2;
+}
+
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255, 0.7);
+
+}
+
+.modal>img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }

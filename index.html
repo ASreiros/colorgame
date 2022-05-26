@@ -10,6 +10,12 @@
 <body>
     <h1>Цвета</h1>
     <button>Старт</button>
+    <div class="soundcontrol">
+        <label for="volume"><img src="./assets/img/soundicon.png" alt="volume"></label>
+        <input id="volume" type="range"  min="1" max="9" value="4">
+
+        
+    </div>
     <section>
         <div class="color" id="d0"></div>
         <div class="color" id="d1"></div>
@@ -26,7 +32,9 @@
         <div class="color" id="d10"></div>
         <div class="color" id="d11"></div>
     </section>
-    
+    <div id="modal" class="modal">
+        <img src="./assets/img/fireworks.gif" alt="victory">
+    </div>
 </body>
 <script src="./app.js" defer></script>
 </html>
